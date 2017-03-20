@@ -7,6 +7,7 @@ public class Main {
         FileManager fileManager = new FileManager();
         ApachePOIExcelWrite apachePOIExcelWrite = new ApachePOIExcelWrite();
         ApachePOIExcelRead apachePOIExcelRead = new ApachePOIExcelRead();
+        ApachePOIExcelFind apachePOIExcelFind = new ApachePOIExcelFind();
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("1. Create File");
@@ -18,6 +19,7 @@ public class Main {
 
         System.out.println("11. Create and write Excel file");
         System.out.println("12. Read Excel file");
+        System.out.println("13. Find Word in Excel file");
 
         int f = 1;
         while (f == 1) {
@@ -49,6 +51,9 @@ public class Main {
                     break;
                 case 12:
                     apachePOIExcelRead.readExcel();
+                    break;
+                case 13:
+                    apachePOIExcelFind.findExcel();
                     break;
             }
         }
